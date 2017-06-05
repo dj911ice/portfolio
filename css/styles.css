@@ -1,0 +1,319 @@
+/***General/Typographic CSS***/
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+	background-color: #FFFDD0 ;
+	/*background-image: url("../img/100euro_web.jpg");*/
+	/*background-size: cover;*/
+	position: relative;
+}
+
+ h1,h2,h3,h4,h5,h6 {
+ 	font-family: TimesNewRoman, "Times New Roman", Times, Baskerville, Georgia, serif;
+ }
+
+ a,
+ p,
+ li {
+ 	font-family: Verdana, Geneva, sans-serif;
+ }
+
+ p,
+ li {
+ 	font-size: 1.15em;
+ }
+
+h1 {
+	text-align: center;
+	font-size: 2.5em;
+}
+
+h3 {
+	text-align: left;
+	font-weight: bold;
+	font-size: 1.5em;
+}
+
+/***google maps js api***/
+#map {
+  height: 45%;
+  width: 45%;
+  position: relative;
+  	bottom: 3%;
+}
+
+/***navigation***/
+.nav {
+	text-transform: uppercase;
+}
+
+.projectName a {
+	text-transform: uppercase;
+	color: white;
+	text-decoration: none;
+}
+
+.anchor {
+	padding-top: 50px;
+}
+
+/*** carousel ***/
+.carousel {
+	margin-left: -15px;
+	margin-right: -15px;
+}
+
+#inspire {
+	font-size: 2em;
+	position: relative;
+		bottom: 135px;
+  color: black;
+
+}
+
+#dazzel {
+  font-size: 1.8em;
+  text-align: left;
+  position: relative;
+    left: -7%;
+    bottom: 156px;
+  color: black;
+}
+
+/***about***/
+.mystory {
+	margin-top: 2%;
+	padding-top: 17%;
+}
+
+#about {
+	position: relative;
+	left: 5%;
+	padding top: 1%;
+	padding-bottom: 1%;
+}
+
+#intro,
+#my-skills,
+#my-story {
+	text-align: center
+}
+
+/***work ***/
+.work {
+	margin-bottom: 2%;
+	padding-bottom: 2%;
+}
+
+.work-img {
+  display: block; /* needed to center the element with margin */
+  margin: auto; /* center the image inside the column if it's smaller */
+  max-width: 200px; /* needs to be set to the width of your image files if they are relatively small */
+  position: relative; /* is needed for .info position: absolute to work */
+}
+.info {
+  position: absolute; /* let's us move the text around and not worry about the image */
+  top: 23%; /* position the text 15% away from the top */
+  left: 5%;
+  color: red;
+  font-family: Futura;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 0.5em;
+  line-height: 1.6;
+  display: none;
+}
+.proj-title {
+  font-weight: 90;
+}
+
+.work1 h1 {
+	margin-bottom: 2%;
+	padding-bottom: 3%;
+}
+
+.work1 p {
+	padding-top: 1.5%;
+	text-align: center;
+	font-weight: bold;
+	color: red;
+}
+
+.work2 {
+	margin-top: 1%;
+	padding-top: 2%;
+}
+
+#work2 a {
+	color: black;
+	text-decoration: none;
+}
+
+/***contact***/
+.contact-parallax {
+    background-image: url("../img/leiden_nl_stock_hero.jpg");
+/*Add a background image*/
+    background-attachment: fixed;
+/*Give the background a fixed position does it not scroll when you scroll*/
+    background-size: cover;
+/*Have the background cover the entire div section*/
+    color: white;
+/*Change the color of the text on top so it is readable, and adjust the padding as needed.*/
+    padding:100px;
+    padding-top: 150px;
+    height: 1000px;
+} /*parallax effect via css*/
+
+.contact h1 {
+	position: relative;
+		bottom: 98px;
+}
+
+#contact {
+	margin-top: 2%;
+	padding-top: 1%;
+}
+
+.post,
+.phone,
+.email {
+	font-size: 1.22em;
+}
+
+.phone {
+	position: relative;
+		/*left: 50%;*/
+		top: 50px;
+}
+
+#post {
+	position: relative;
+		top: 5%;
+}
+
+#hello {
+	text-align: right;
+	position: relative;
+		right: 18%;
+}
+/***faq***/
+.faq {
+	padding-top: 1%;
+	margin-top: 0px;
+	text-align: center;
+}
+
+#faq {
+	background-image: url("../img/landscape.jpg");
+	background-size: cover;
+}
+
+.faq h1 {
+	text-align: center;
+}
+
+/***accordion faq***/
+.panel-group {
+	padding-top: 1%;
+  background-color: #FFFDD0;
+}
+
+.panel-body {
+	font-size: 1.25em;
+	background-color: #FFFDD0;
+}
+
+/*.panel-heading {
+
+}*/
+
+.panel-title a {
+	text-decoration: none;
+	font-weight: bold;
+}
+
+/***forms***/
+form {
+	position: relative;
+		left: 45%;
+  	bottom: 500px;
+}
+
+.form-control {
+	width: 82%;
+}
+
+/***buttons***/
+button {
+	margin-top: 1%;
+	padding-top: 2%;
+}
+
+.modal-button {
+	float: right;
+	padding-top: 1%;
+	margin-right: 6.5%;
+}
+
+#modalembed {
+	height: 525px;
+	width: 100%;
+	padding: 5%;
+}
+
+/***Learn More***/
+.learn-more {
+	text-align: left;
+	float: left;
+	margin-left: 6.5%;
+}
+
+/***footer***/
+footer {
+	margin-top: 1%;
+	padding-top: 1%;
+}
+
+.copyright {
+	margin-top: 1%;
+	padding-top: 1%;
+	text-align: center;
+	font-weight: bold;
+}
+
+/***social media***/
+.twitter {
+	float: right;
+	margin-top: 2%;
+	padding-top: 2%
+}
+.fb-like {
+	margin-top: 2%;
+	padding-top: 2%;
+	padding-left: 1%;
+}
+
+/***Youtube***/
+#careerfoundry {
+	position: relative;
+	margin-top: 3%;
+	padding-top: 5%;
+}
+
+/***media queries***/
+/* Large desktop */
+/*@media (min-width: 1200px) { ... }*/
+
+/* Portrait tablet to landscape and desktop */
+/*@media (min-width: 768px) and (max-width: 979px) { ... }*/
+
+/* Landscape phone to portrait tablet */
+/*@media (max-width: 767px) { ... }*/
+
+/* Landscape phones and down */
+/*@media (max-width: 480px) { ... }

@@ -1,0 +1,145 @@
+/** {border: 1px solid red;} show/hide box */
+
+* {box-sizing: border-box;}
+
+body {
+	padding-top: 74px;
+	/*background-color: #fffeea;*/
+	/*background-color: #b0841c;*/
+	color: #34495e;
+}
+
+#about h3 {
+	text-align: center;
+}
+/*.jumbotron {
+	background-image: url("../img/leiden_nl_stock.jpg");
+	background-size: cover;
+}*/
+
+
+/*.container {
+	width: 80%;
+	margin: 0px auto;
+}
+
+.header {
+	text-align: center;
+	margin-bottom: 25px;
+	text-decoration: underline;
+}
+
+.image {
+	display: inline-block;
+	float: left;
+	width: 30%;
+}
+
+.image img {
+	width: 100%;
+	height: 268px;
+	padding-bottom: 10px;
+}
+
+.column {
+	display: inline-block;
+	float: left;
+	width: 33%;
+	padding: 0 20px;
+	border: 1px solid black;
+}
+
+.main-text {
+	clear: both;
+	padding-top: 25px;
+	/*border: 1px solid black;
+}
+
+.skills {
+  height: 258px;
+ }*/
+
+.links {
+	position: absolute;
+	width: 342px;
+  height: 374px;
+}
+
+.nav ul li {
+	display: inline-block;
+	padding: 20px 10px 20px;
+	float: right;
+}
+
+.nav {
+	background-color: #b0841c;
+	position: fixed;
+	width: 100%;
+	top: 0;
+}
+.nav ul li a {
+	color: black;
+	text-transform: uppercase;
+	letter-spacing: 0.05em;
+	font-weight: bold;
+	text-decoration: none;
+	transition: color 550ms;
+	-webkit-transition: color 550ms;
+}
+
+.nav a:hover {
+	/*color: #ff0;*/
+	color: purple;
+	text-decoration: none;
+}
+/*Typography*/
+h1,
+h2,
+h3 {
+	font-family: Futura, Helvetica, Arial, sans-serif;
+}
+
+p,
+li {
+	/*font-family: Georgia, Palatino, TimesNewRoman, serif*/
+}
+
+/*.intro p {
+	font-family: Futura, Helvetica, Arial, sans-serif;
+	font-size: 3em;
+	font-weight: 100;
+	-webkit-margin-before: 0;
+}*/
+
+/*.skills h3 {
+	text-align: center;
+	text-decoration: underline;
+	text-transform: uppercase;
+	/*background-color: #5ad4c2;
+	/*color: #fff;
+	/*padding:5px 0 5px 0;
+}*/
+
+/*#skills-list {
+	margin-left: 50px;
+}*/
+
+/*.intro h2 {
+	text-align: center;
+	text-decoration: underline;
+}
+
+.main-text h3 {
+	text-align: center;
+	text-decoration: underline;
+}
+
+.contact h3 {
+	text-align: center;
+	text-decoration: underline;
+}
+
+.links h3 {
+	text-align: center;
+	text-decoration: underline;
+}*/

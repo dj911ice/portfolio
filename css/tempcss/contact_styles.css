@@ -1,0 +1,93 @@
+/** {border: 1px solid red;} show/hide box */
+
+* {box-sizing: border-box;}
+
+/* main css styling goes here*/
+
+body {
+	background-color: #b0841c;
+}
+.jumbotron {
+	background-image: url("../img/leiden_nl_stock.jpg");
+	background-size: cover;
+}
+
+.name,
+.post {
+	padding: 3px;
+	position: relative;
+    left: 15%;
+}
+#name p {
+	display: inline-block;
+	position: relative;	
+    bottom: 25px;
+    left: 18px;
+}
+
+#post p {
+	display: inline-block;
+	position: relative;
+		bottom: 25px;
+    left: 18px;
+}
+.phone,
+.email {
+	padding: 3px;
+	position: relative;
+    bottom: 295.5px;
+    left: 73%;
+}
+#phone p {
+	display: inline-block;
+	position: relative;
+		bottom: 25px;
+    left: 18px;
+}
+#email p {
+	display: inline-block;
+	position: relative;
+		bottom: 25px;
+    left: 18px;
+}
+.nav ul li {
+	display: inline-block;
+	padding: 20px 10px 20px;
+	float: right;
+}
+
+.nav {
+	background-color: #b0841c;
+	position: fixed;
+	width: 100%;
+	top: 0;
+}
+.nav ul li a {
+	color: black;
+	text-transform: uppercase;
+	letter-spacing: 0.05em;
+	font-weight: bold;
+	text-decoration: none;
+	transition: color 550ms;
+	-webkit-transition: color 550ms;
+}
+
+.nav a:hover {
+	/*color: #ff0;*/
+	color: purple;
+	text-decoration: none;
+}
+
+
+/*Typography: font styling goes here*/
+
+.jumbotron p {
+	font-family: Verdanda Arial TimeNewRoman Sans-serif;
+	color: purple;
+}
+.contact h1 {
+	font-family: Verdanda Arial TimeNewRoman Sans-serif;
+	text-align: center;
+	margin-top: 0px;
+	padding-top: 23px;
+}
