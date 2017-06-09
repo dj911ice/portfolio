@@ -102,27 +102,28 @@
 
 <!-- Youtube Video: CF -->
 
-<div class="embed-responsive embed-responsive-16by9" id="careerfoundry">
+<!-- <div class="embed-responsive embed-responsive-16by9" id="careerfoundry">
   <iframe class="embed-responsive-item" width="560" height="315" src="https://www.youtube.com/embed/_YX29u6E8BM" allowfullscreen="false">
   </iframe>
-</div>
+</div> -->
 <!-- About Section -->
   <div class="container" id="process">
     <div class="row anchor" id="about">
       <h1>About</h1>
-        <div class="col-md-6 col-sm-8">
-          <img src="img/me_airport.jpg" class="img-responsive">
-        </div>
+        
         <div class="col-md-6 col-sm-8">
           <h3 id="intro">Introduction</h3>
             <p>
-            Greetings! I am Justin, a professional web developer utilizing Ruby on Rails for back development. The goal is to create beautiful custom yet flexible websites and functional backend for clients that are of high value yet reasonable in price.
+            
             </p>
+            <div id="image-jpd">
+              <img src="" class="img-responsive">
+            </div>
         </div>
         <div class="col-md-6 col-sm-8">
           <h3 id="my-story">My Story</h3>
           <p>
-            Growing up in the eighties and ninties with video games and computers was a fasinating time. Early on my passion for computers was great and learned on various computing technologies, ranging from Apple/Mac to various IBM compatiable models. The ninties came along and with it the internet which revolutionized the computing landscape. After attending the University of Toledo for Bachelours of Science in Pharmaceutical Sciences and during my time at Eastern Michigan University for a Masters in Health Economics, started a business in selling dance shoes online. The business as well as being director of website for the Balloom Club at the University of Michigan gave me first hand experience on how webpages worked and how they were needed to be updated. In June of 2013 started working for a small appliance firm in Ann Arbor within the web-marketing department to create online content. About a year later moved to Cleveland to perform data entry and eventually became a member of the MIS department for a well known non-profit. During my time there was thrusted into the ordinary duties of a help desk personell yet was able to partake in various meetings for the creation of the new company website. Through the generousity of the non-profit, paid for some classes at a local community college. Java was the class that cemented my interest in web and programming developement. After 18 months, was made redunant and hence went onto Career Foundry after the summer with Codecademy. Thus the beginning of my jouney as a professional web developer!
+            
           </p>
         </div><!-- end main-text -->
       </div>
@@ -134,7 +135,6 @@
       <div class="row anchor" id="work1">
         <h1> Portfolio</h1>
       </div> <!-- end row -->
-      <p> Kitten images are for display only! Portfolio work coming soon!</p>
     </div> <!-- end work 1 container -->
     <!-- Work 2 Section -->
     <div class="container work work2" id="process">
@@ -148,7 +148,7 @@
                 <li>CareerFoundry</li>
                 <li>Codecademy</li>
             </ul>
-            <a href="#"><button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="bottom" title="More Information">View details &raquo;</button></a>
+            <button type="button" class="btn btn-default" data-toggle="modal" data-target=".bs-example-modal-lg">View details</button>
 
        </div><!-- /col -->
        <div class="col-md-4">
@@ -164,15 +164,15 @@
                    </ul> -->
                </li>
              </ul>
-         <a href="#"><button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="right" title="More Information">View details &raquo;</button></a>
+         <button type="button" class="btn btn-default" data-toggle="modal" data-target=".bs-example-modal-lg">View details</button>
        </div><!-- /col -->
         <div class="col-md-4">
           <h2>Other</h2>
                 <ul>
-                    <li>Solutions For VIP Dancers LC</li>
-                    <li>Ballroom Dance Club at UofM</li>
+                    <li>Solutions For VIP Dancers</li>
+                    <li>Ballroom Dance Club</li>
                 </ul>
-            <a href="#"><button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="left" title="More Information">View details &raquo;</button></a>
+            <button type="button" class="btn btn-default" data-toggle="modal" data-target=".bs-example-modal-lg">View details</button>
         </div><!-- /col -->
       </div><!-- /row -->
     </div> <!-- /container -->
@@ -260,7 +260,12 @@
           </div> <!-- end panel-heading class -->
         <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
           <div class="panel-body">
-            For Employers (Regular Employment): Available for hire in the Detroit/Ann Arbor area or remotely
+            Agency Employers: Available for hire in metro Detroit/Ann Arbor<br>
+            Direct Employers: Available for hire in metro Detroit/Ann Arbor<br>            
+            Remote Employers: Available for hire from Canada/United States and Europe<br><br>
+            Open for contract, freelance, employee positions: Full/Part Time and Temporary<br><br>
+            Open to relocation for the right opportunity!<br><br>
+            Use contact form, email, or LinkedIn messaging for details
           </div> <!-- end panel-body class -->
         </div> <!-- end panel-collapse collapse class -->
       </div> <!-- end panel panel-default class -->
@@ -274,15 +279,60 @@
         </div> <!-- end panel-heading class -->
         <div id="collapseTwo" class="panel-collapse collapse" roll="tabpanel" aria-labelledby="headingTwo">
           <div class="panel-body">
-            <ul id="skill-list">
-              <li>Website Development: Ajax, Bootstrap 3, CSS3, HTML5, Javascript, jQuery</li>
-              <li>Web Frameworks: Ruby on Rails</li>
-              <li>Version Control: Git and Github</li>
-              <li>Deployment: Heroku</li>
-              <li>APIs: Google</li>
-              <li>Payments: Stripe</li>
-              <li>Other: Active Directory, Dreamweaver, CMS, Office Desktop/365, Photoshop, Java, and UX</li>
-          </ul>
+            <div class="col-md-4 col-sm-6 skill-list">
+              <h3>Web Development</h3>
+                <ul>
+                  <li>Ajax</li>
+                  <li>Bootstrap 3</li>
+                  <li>CSS 3</li>
+                  <li>HTML 5</li>
+                  <li>Javascript</li>
+                  <li>jQuery</li>
+                </ul>
+            </div>
+            <div class="col-md-4 col-sm-6 skill-list">
+              <h3>Web Framworks/Languages</h3>
+                <ul>
+                  <li>Ruby on Rails</li>
+                </ul>
+            </div>
+            <div class="col-md-4 col-sm-6 skill-list">
+              <h3>Version Control</h3>
+                <ul>
+                  <li>Git</li>
+                  <li>Git Hub</li>
+                </ul>
+            </div>
+            <div class="col-md-4 col-sm-6 skill-list">
+              <h3>Deployment</h3>
+                <ul>
+                  <li>Heroku</li>
+                </ul>
+            </div>
+            <div class="col-md-4 col-sm-6 skill-list">
+              <h3>APIs</h3>
+                <ul>
+                  <li>Google</li>
+                </ul>
+            </div>
+            <div class="col-md-4 col-sm-6 skill-list">
+              <h3>Payments</h3>
+                <ul>
+                  <li>Stripe</li>
+                </ul>
+            </div>
+            <div class="col-md-4 col-sm-6 skill-list">
+              <h3>Other</h3>
+                <ul>
+                  <li>Active Directory</li>
+                  <li>Dreamweaver</li>
+                  <li>Content/Customer Management Systems</li>
+                  <li>MS Office: Desktop/O365</li>
+                  <li>Photoshop</li>
+                  <li>Java</li>
+                  <li>UX</li>
+                </ul>
+            </div>
           </div> <!-- end panel-body class -->
         </div> <!-- end panel-collapse collapse class -->
       </div> <!-- end panel panel-default class -->
@@ -296,11 +346,34 @@
         </div> <!-- end panel-heading class -->
         <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
           <div class="panel-body">
-
+            <div class="col-md-4 col-sm-6 skill-list"> 
+              <h3>Languages</h3>
+              <ul>
+                <li>Python</li>
+                <li>Swift</li>
+                <li>Java</li>
+              </ul>
+            </div>
+            <div class="col-md-4 col-sm-6 skill-list"> 
+              <h3>Frameworks</h3>
+              <ul>
+                <li>Django</li>
+                <li>React JS</li>
+                <li>Liquid</li>
+              </ul>
+            </div>
+            <div class="col-md-4 col-sm-6 skill-list"> 
+              <h3>Technologies</h3>
+              <ul>
+                <li>Android</li>
+                <li>iOS</li>
+                <li>.Net</li>
+              </ul>
+            </div>
           </div> <!-- end panel-body class -->
         </div> <!-- end panel-collapse collapse class -->
       </div> <!-- end panel panel-default class -->
-      <div class="panel panel-default">
+      <!-- <div class="panel panel-default">
         <div class="panel-heading" roll="tab" id="headingFour">
           <h4 class="panel-title">
             <a class="collapsed" roll="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="false" aria-controls="collapseFour"><span class="glyphicon glyphicon-exclamation-sign"></span>
@@ -311,9 +384,9 @@
         <div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour">
           <div class="panel-body">
 
-          </div> <!-- end panel-body class -->
-        </div> <!-- end panel-collapse collapse class -->
-      </div> <!-- end panel panel-default class -->
+          </div> <!- end panel-body class -->
+        <!-- </div> <!- end panel-collapse collapse class -->
+      <!-- </div> <!- end panel panel-default class -->
       <!-- <div class="panel panel-default">
         <div class="panel-heading" roll="tab" id="headingFive">
           <h4 class="panel-title">
