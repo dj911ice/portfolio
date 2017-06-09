@@ -44,23 +44,24 @@ $(document).ready(function(){
 	$.stellar();
 
 	//tooltips
-	$(function () {
-    	$('#item1').tooltip();
-   		});
-	$(function () {
-    	$('[data-toggle="tooltip"]').tooltip();
-  		});
-  $(function () {
-    		$('#ceogc').tooltip();
-      	});
-  $(function () {
-    		$('#big-georges').tooltip();
-     		});
-  $(function () {
-        $('#witbeck').tooltip();
-        });
+	// $(function () {
+ //    	$('#item1').tooltip();
+ //   		});
+	// $(function () {
+ //    	$('[data-toggle="tooltip"]').tooltip();
+ //  		});
+ //  $(function () {
+ //    		$('#ceogc').tooltip();
+ //      	});
+ //  $(function () {
+ //    		$('#big-georges').tooltip();
+ //     		});
+ //  $(function () {
+ //        $('#witbeck').tooltip();
+ //        });
+
   $('#button').on('click', function(){
-  	console.log('clicked'); //capturing the on "click"
+  	// console.log('clicked'); //capturing the on "click"
   	var comment = $('.message-box').val();
 
   //text background conditional
@@ -91,7 +92,7 @@ $(document).ready(function(){
         <div class='col-md-6 col-sm-8 col-xs-12'>\
           <a href= " + works[i].url + " class='work-img'>\
             <img class='img-responsive' src='" + works[i].pic + "'>\
-            <span class='info'><p class='proj-title'>" + works[i].title + " </p></span>\
+            <span class='info'><p class='proj-title'>" + " </p></span>\
           </a>\
         </div>\
       ");
@@ -108,4 +109,5 @@ $(document).ready(function(){
         $(images[i]).css('border', '2px solid purple');
       };
     };
+    
   });
