@@ -97,7 +97,7 @@ $(document).ready(function(){
         </div>\
       ");
     $('.work-img').attr("target", "_blank");
-    $('.work-img').mouseenter(function(){
+     $('.work-img').mouseenter(function(){
       $('.info', this).show();
     }).mouseleave(function(){
       $('.info', this).hide();
