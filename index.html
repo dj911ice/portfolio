@@ -24,7 +24,7 @@
 
   <body data-spy="scroll" data-target=".navbar">
     <!-- begin navbar  -->
-    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+    <nav class="navbar navbar-inverse navbar-fixed-top">
       <div class="container-fluid">
         <div class="navbar-header">
           <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
@@ -33,7 +33,7 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <div class="projectName navbar-brand" >
+          <div class="projectName navbar-brand">
             <a target= "_blank" href="https://www.linkedin.com/in/justinpdickerson">JP Dickerson</a>
           </div> <!-- end projectName -->
         </div> <!-- end navbar header -->
@@ -57,7 +57,7 @@
       </div> <!--end nav container-fluid -->
     </nav> <!-- end navbar -->
     <!-- Carousel Images Section -->
-       <div class="container-fluid anchor" id="image-carousel" id="process">
+       <div class="container-fluid anchor" id="image-carousel">
         <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
   <!-- Indicators -->
   <ol class="carousel-indicators">
@@ -116,7 +116,7 @@
               Greetings! I am Justin an aspiring professional Ruby on Rails and front-end web developer! My goal is to produce websites and web applications that are of high value for clients!
             </p>
             <div id="image-jpd">
-              <img src="" class="img-responsive">
+              <!-- <img src="" class="img-responsive"> -->
             </div>
         </div>
         <div class="col-md-6 col-sm-8 about">
@@ -132,23 +132,19 @@
   <!-- Work 1 Section -->
     <div class="container work work1" id="work1">
       <div class="row anchor">
-        <h1> Portfolio</h1>
+        <h1>Portfolio</h1>
       </div> <!-- end row -->
     </div> <!-- end work 1 container -->
     <!-- Work 2 Section -->
     <div class="container work work2" id="work2">
       <!-- Example row of columns -->
       <div class="row anchor">
-        <h1>Experience</h1>
+        <h1 id="exp">Experience</h1>
 
         <div class="col-md-4">
-          <h2>Professional</h2>
-            <ul>
-              <li>CareerFoundry</li>
-              <li>Codecademy</li>
-            </ul>
+          <!-- <h2>Professional</h2> -->
             
-        <button type="button" class="btn btn-default" data-toggle="modal" data-target="#professional">View Professional</button>
+        <button type="button" class="btn btn-default btn-block" data-toggle="modal" data-target="#professional">View Professional</button>
         <!-- Modal -->
         <div id="professional" class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true" data-keyboard="true" role="dialog">
           <div class="modal-dialog">
@@ -174,12 +170,9 @@
           </div>        
        </div><!-- /col -->
        <div class="col-md-4">
-        <h2>Employment</h2>
-          <ul>
-            <li>Council for Economic Opportunities</li>
-            <li>Home Appliance Mart</li>
-          </ul>
-         <button type="button" class="btn btn-default" data-toggle="modal" data-target="#prior-employment">View Employment</button>
+        <!-- <h2>Employment</h2> -->
+
+         <button type="button" class="btn btn-default btn-block" data-toggle="modal" data-target="#prior-employment">View Employment</button>
          <!-- Modal -->
         <div id="prior-employment" class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true" data-keyboard="true" role="dialog">
         <div class="modal-dialog">
@@ -204,12 +197,9 @@
       </div>              
        </div><!-- /col -->
         <div class="col-md-4">
-          <h2>Past</h2>
-              <ul>
-                <li>Solutions For VIP Dancers</li>
-                <li>Ballroom Dance Club</li>
-              </ul>
-         <button type="button" class="btn btn-default" data-toggle="modal" data-target="#other">View Past</button>
+          <!-- <h2>Past</h2> -->
+            
+         <button type="button" class="btn btn-default btn-block" data-toggle="modal" data-target="#other">View Past</button>
          <!-- Modal -->
         <div id="other" class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true" data-keyboard="true"  role="dialog">
           <div class="modal-dialog">
@@ -231,7 +221,7 @@
               </div>
             </div>
           </div>
-        </div>                                   
+        </div>                                                         
         </div><!-- /col -->
       </div><!-- /row -->
     </div> <!-- /container -->
@@ -260,11 +250,11 @@
             <div class="form-group">
               <h2 id="hello">Say Hello!</h2>
             <label class="sr-only" for="name">First and Last Name</label>
-            <input class="form-control" id="name" type="text" name="" minlength="10" maxlength="25" placeholder="Enter your First and Last Name">
+            <input class="form-control" id="name" type="text" minlength="10" maxlength="25" placeholder="Enter your First and Last Name">
             </div>
             <div class="form-group">
-              <label class="sr-only" for="Email address" >Email Address *</label>
-              <input class="form-control" id="email" type="email" name="" placeholder="example@domain.com" required="required" title="Input email here">
+              <label class="sr-only" for="email-address" >Email Address *</label>
+              <input class="form-control" id="email" type="email" placeholder="example@domain.com" required="required" title="Input email here">
             </div>
             <label class="sr-only" for="message-box">Message Area *
             </label>
@@ -280,16 +270,16 @@
     <div class="row">
       <h2 class="learn-more">Learn More</h2>
       <div class="modal-button">
-        <button class="btn btn-primary" data-toggle="modal" data-target="#mycv">View ResumeCV</button>
+        <button class="btn btn-primary" data-toggle="modal" data-target="#mycv">View Resume</button>
       </div>
     </div>
     <!-- Large Modal -->
-    <div id="mycv"class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true" data-backdrop="static" data-keyboard="true">
+    <div id="mycv" class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true" data-backdrop="static" data-keyboard="true">
       <div class="modal-dialog modal-lg">
         <div class="modal-content">
           <div class="modal-header">
             <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-            <h4 class="modal-title" id="myModalLabel">JP Dickerson: Resume</h4>
+            <h4 class="modal-title" id="myModalLabel">Justin P. Dickerson: Ruby/Web Developer</h4>
           </div>
             <div class="modal-body">
                <embed id="modalembed" src="pdf/jpdfsrwd60117.pdf">
@@ -306,31 +296,32 @@
         <div class="panel panel-default">
           <div class="panel-heading" role="tab" id="headingOne">
             <h4 class="panel-title">
-              <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aira-controls="collapseOne"><span class="glyphicon glyphicon-exclamation-sign"></span>
+              <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true"><span class="glyphicon glyphicon-exclamation-sign"></span>
               Employment Availability
               </a>
             </h4>
           </div> <!-- end panel-heading class -->
         <div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
           <div class="panel-body">
-            Agency Employers: Available for hire in metro Detroit/Ann Arbor<br>
-            Direct Employers: Available for hire in metro Detroit/Ann Arbor<br>            
-            Remote Employers: Available for hire from Canada/United States and Europe<br><br>
-            Open for contract, freelance, employee positions: Full/Part Time and Temporary<br><br>
-            Open to relocation for the right opportunity!<br><br>
-            Use contact form or <a target= "_blank" href="https://www.linkedin.com/in/justinpdickerson">LinkedIn</a>
+            <p>Agency Employers: Available for hire in metro Detroit/Ann Arbor<br/>
+              Direct Employers: Available for hire in metro Detroit/Ann Arbor<br/>            
+              Remote Employers: Available for hire from Canada/United States and Europe<br/><br/>
+              Open for contract, freelance, employee positions: Full/Part Time and Temporary<br/><br/>
+              Open to relocation for the right opportunity!<br/><br/>
+            </p>
+            <!-- Use contact form or <a target= "_blank" href="https://www.linkedin.com/in/justinpdickerson">LinkedIn</a> -->
           </div> <!-- end panel-body class -->
         </div> <!-- end panel-collapse collapse class -->
       </div> <!-- end panel panel-default class -->
       <div class="panel panel-default">
-        <div class="panel-heading" roll="tab" id="headingTwo">
+        <div class="panel-heading" id="headingTwo">
           <h4 class="panel-title">
             <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo"><span class="glyphicon glyphicon-exclamation-sign"></span>
               Technical Summary
             </a>
           </h4>
         </div> <!-- end panel-heading class -->
-        <div id="collapseTwo" class="panel-collapse collapse" roll="tabpanel" aria-labelledby="headingTwo">
+        <div id="collapseTwo" class="panel-collapse collapse" aria-labelledby="headingTwo">
           <div class="panel-body">
             <div class="col-md-4 col-sm-6 skill-list">
               <h3>Web Development</h3>
@@ -390,9 +381,9 @@
         </div> <!-- end panel-collapse collapse class -->
       </div> <!-- end panel panel-default class -->
       <div class="panel panel-default">
-        <div class="panel-heading" roll="tab" id="headingThree">
+        <div class="panel-heading" id="headingThree">
           <h4 class="panel-title">
-            <a class="collapsed" roll="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree"><span class="glyphicon glyphicon-exclamation-sign"></span>
+            <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree"><span class="glyphicon glyphicon-exclamation-sign"></span>
             Technical Interestests
             </a>
           </h4>
@@ -459,7 +450,7 @@
     <!-- footer -->
   <footer>
     <div class="copyright">
-     &copy Justin P. Dickerson 2017
+     &copy; Justin P. Dickerson 2017
     </div>
       <div>
         <div class="twitter">
@@ -477,10 +468,10 @@
     <!-- ============================= -->
 
     <!-- Javascript Frameworks -->
-    <!-- JQuery 1.11.3 -->
-    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- JQuery 2.2.4 -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
     <!-- Bootstrap core JS -->
-    <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <!-- Can place script tags with JavaScript files here -->
 
     <script type="text/javascript" src="js/jquery.stellar.min.js"></script>

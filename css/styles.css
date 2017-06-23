@@ -1,23 +1,16 @@
 /***General/Typographic CSS***/
 html,
 body {
+	background-color: black;
   height: 100%;
   margin: 0;
   padding: 0;
 }
 
-body {
-	background-color: #FFFDD0;
-}
-
- h1,h2,h3,h4,h5,h6 {
- 	font-family: TimesNewRoman, "Times New Roman", Times, Baskerville, Georgia, serif;
- }
-
- a,
- p,
- li {
- 	font-family: Verdana, Geneva, sans-serif;
+ h1,h2,h3,h4,h5,h6,a,p,
+ li  {
+ 	font-family: Tahoma, Verdana, Segoe, sans-serif;
+ 	color: white;
  }
 
  p,
@@ -129,8 +122,12 @@ h3 {
 }
 
 .portfolio-img {
-	margin: 0 auto;
-	
+	margin: 0 auto;	
+}
+
+#exp {
+	margin-bottom: 1%;
+	padding-bottom: 10px;
 }
 
 /***contact***/
@@ -139,6 +136,7 @@ h3 {
 /*Add a background image*/
   background-image: url("../img/leiden_nl_stock_hero.jpg");
   background-size: 100%;
+  background-repeat: none;
 
 /*Give the background a fixed position does it not scroll when you scroll*/
  	background-attachment: fixed;
@@ -196,12 +194,12 @@ h3 {
 /***accordion faq***/
 .panel-group {
 	padding-top: 1%;
-  background-color: #FFFDD0;
+  /*background-color: black;*/
 }
 
 .panel-body {
 	font-size: 1.25em;
-	background-color: #FFFDD0;
+	background-color: black;
 }
 
 .panel-title a {
@@ -234,7 +232,14 @@ h3 {
 	padding: 1%;
 }
 
-/***Learn More***/
+/***modal***/
+.modal-body,
+.modal-header,
+.modal-footer{
+	background-color: black;
+}
+
+/***learn more***/
 .learn-more {
 	display: inline-block;
 	float: left;
@@ -251,7 +256,9 @@ footer {
 	margin-top: 1%;
 	padding-top: 1%;
 	text-align: center;
+	color: white;
 	font-weight: bold;
+
 }
 
 /***social media***/
