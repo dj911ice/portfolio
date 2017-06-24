@@ -44,21 +44,13 @@ $(document).ready(function(){
 	$.stellar();
 
 	//tooltips
-	// $(function () {
- //    	$('#item1').tooltip();
- //   		});
-	// $(function () {
- //    	$('[data-toggle="tooltip"]').tooltip();
- //  		});
- //  $(function () {
- //    		$('#ceogc').tooltip();
- //      	});
- //  $(function () {
- //    		$('#big-georges').tooltip();
- //     		});
- //  $(function () {
- //        $('#witbeck').tooltip();
- //        });
+	$(function () {
+    	$('#linkedin').tooltip();
+   		});
+	$(function () {
+    	$('[data-toggle="tooltip"]').tooltip();
+  		});
+ 
 
   $('#button').on('click', function(){
   	// console.log('clicked'); //capturing the on "click"
