@@ -31,15 +31,15 @@ $(document).ready(function(){
 
 	//smooth scrolling
 	var $root = $('html, body');
-        $('.navbar-nav a').click(function(){
-          var href = $.attr(this, 'href');
-          $root.animate({
-            scrollTop: $(href).offset().top
-          }, 500, function () {
-            window.location.hash = href;
-          });
-        return false;
-        	});
+    $('.navbar-nav a').click(function(){
+      var href = $.attr(this, 'href');
+      $root.animate({
+        scrollTop: $(href).offset().top
+      }, 500, function () {
+        window.location.hash = href;
+      });
+    return false;
+    	});
   //stellar
 	$.stellar();
 
@@ -81,12 +81,12 @@ $(document).ready(function(){
   //work section
   for(var i = 0; i < works.length; ++i) {
     $('#work1').append("\
-        <div class='col-md-6 col-sm-8 col-xs-12'>\
-          <a href= " + works[i].url + " class='work-img'>\
-            <img class='img-responsive' src='" + works[i].pic + "'>\
-            <span class='info'><p class='proj-title'>" + " </p></span>\
-          </a>\
-        </div>\
+      <div class='col-md-6 col-sm-8 col-xs-12'>\
+        <a href= " + works[i].url + " class='work-img'>\
+          <img class='img-responsive' src='" + works[i].pic + "'>\
+          <span class='info'><p class='proj-title'>" + " </p></span>\
+        </a>\
+      </div>\
       ");
     $('.work-img').attr("target", "_blank");
      $('.work-img').mouseenter(function(){
@@ -101,5 +101,12 @@ $(document).ready(function(){
         $(images[i]).css('border', '2px solid purple');
       };
     };
+  //ajax form
+    // $.ajax("form"{
+    //   url: "https://formspree.io/justin.p.dickerson@gmail.com", 
+    //   method: "POST",
+    //   data: {message: "New message!"},
+    //   dataType: "json"
+    // });
     
   });

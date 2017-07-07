@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 
-    <title>JPD Ruby/Web Dev</title>
+    <title>JPD ROR/Web Dev</title>
 
     <!-- Bootstrap core CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
@@ -19,7 +19,8 @@
       <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
-       
+    <!-- Devicon CSS CDN -->
+    <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
   </head>
 
   <body data-spy="scroll" data-target=".navbar">
@@ -148,8 +149,20 @@
                 </div>
                 <div class="modal-body">
                   <p>CareerFoundry: A top student, who showed great promise. Completed the front-end portion of the course in 1 month!</p>
-                  <p>Codecademy: Took initiative in continuing coding education upon becoming redundant, completed multiple modules including HTML, Javascript, Ruby, Rails, and many others throughout the summer of 2016.</p><br><br>
-                  <p>Current Pursuits: Reading~Agile Web Development with Rails 5.1 and building a web cart application.</p>
+                  <p>Codecademy: Took initiative to learn how to code throughout the summer of 2016 with multiple modules such as
+                   <ul>
+                     <li>HTML</li> 
+                     <li>CSS</li>
+                     <li>Javascript</li> 
+                     <li>Ruby</li>
+                     <li>Rails</li>
+                   </ul>
+                   </p><br/>
+                  <p>Current Pursuits: </p>
+                  <ul>
+                    <li>Reading~Agile Web Development with Rails 5.1 and building a web cart application.</li>
+                    <li>Exploring Python and Django via a tutorial, and creating a polling web application.</li>
+                  </ul>
                 </div>
                 <div class="modal-footer">
                   <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -226,19 +239,19 @@
         </div><!--end class post -->
         
         <div id="form-contact">
-          <form class="col-lg-8 col-md-8">
+          <form class="col-lg-8 col-md-8" action="https://formspree.io/justin.p.dickerson@gmail.com" method="POST">
             <div class="form-group">
               <h2 id="hello">Say Hello!</h2>
             <label class="sr-only" for="name">Your Name</label>
-            <input class="form-control" id="name" type="text" minlength="10" maxlength="25" placeholder="Enter your First and Last Name">
+            <input class="form-control" id="name" type="text" name="name" minlength="10" maxlength="25" placeholder="Enter your Name">
             </div>
             <div class="form-group">
               <label class="sr-only" for="email-address" >Email Address *</label>
-              <input class="form-control" id="email" type="email" placeholder="example@domain.com" required="required" title="Input email here">
+              <input class="form-control" id="email" type="email" name="_replyto" placeholder="example@domain.com" required="required" title="Input email here">
             </div>
             <label class="sr-only" for="message-box">Message Area *
             </label>
-            <textarea class="form-control message-box" id="message-box" style="resize: none" placeholder="Enter your message" cols="40" rows="5" required="required" title="Input message here"></textarea>
+            <textarea class="form-control message-box" id="message-box" name style="resize: none" placeholder="Enter your message" cols="40" rows="5" required="required" title="Input message here"></textarea>
             <p id="char-count"></p>
             <p id="visible-comment"></p>
             <button type="submit" class="btn btn-default" id="button">Submit</button>
@@ -259,7 +272,7 @@
         <div class="modal-content">
           <div class="modal-header">
             <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-            <h4 class="modal-title" id="myModalLabel">Justin P. Dickerson: Ruby/Web Developer</h4>
+            <h4 class="modal-title" id="myModalLabel">Justin P. Dickerson: Ruby on Rails/Web Developer</h4>
           </div>
             <div class="modal-body">
                <embed id="modalembed" src="pdf/jpdfsrwd60117.pdf">
@@ -307,36 +320,37 @@
               <h3>Web Development</h3>
                 <ul>
                   <li>Ajax</li>
-                  <li>Bootstrap 3</li>
-                  <li>CSS 3</li>
-                  <li>HTML 5</li>
-                  <li>Javascript</li>
-                  <li>jQuery</li>
+                  <li><i class="devicon-bootstrap-plain-wordmark"></i></li>
+                  <li><i class="devicon-css3-plain-wordmark"></i></li>
+                  <li><i class="devicon-html5-plain-wordmark"></i></li>
+                  <li><i class="devicon-javascript-plain"></i></li>
+                  <li><i class="devicon-jquery-plain-wordmark"></i></li>
                 </ul>
             </div>
             <div class="col-md-4 col-sm-6 skill-list">
               <h3>Web Framworks</h3>
                 <ul>
-                  <li>Ruby on Rails</li>
+                  <li><i class="devicon-ruby-plain-wordmark"></i> + 
+                  <i class="devicon-rails-plain-wordmark"></i></li>
                 </ul>
             </div>
             <div class="col-md-4 col-sm-6 skill-list">
               <h3>Version Control</h3>
                 <ul>
-                  <li>Git</li>
-                  <li>Git Hub</li>
+                  <li><i class="devicon-git-plain-wordmark"></i></li>
+                  <li><i class="devicon-github-plain-wordmark"></i></li>
                 </ul>
             </div>
             <div class="col-md-4 col-sm-6 skill-list">
               <h3>Deployment</h3>
                 <ul>
-                  <li>Heroku</li>
+                  <li><i class="devicon-heroku-original-wordmark"></i></li>
                 </ul>
             </div>
             <div class="col-md-4 col-sm-6 skill-list">
               <h3>APIs</h3>
                 <ul>
-                  <li>Google</li>
+                  <li><i class="devicon-google-plain-wordmark"></i></li>
                 </ul>
             </div>
             <div class="col-md-4 col-sm-6 skill-list">
@@ -373,23 +387,23 @@
             <div class="col-md-4 col-sm-6 skill-list"> 
               <h3>Languages</h3>
               <ul>
-                <li>Python</li>
-                <li>Swift</li>
-                <li>Java</li>
+                <li><i class="devicon-python-plain-wordmark"></i></li>
+                <li><i class="devicon-swift-plain-wordmark"></i></li>
+                <li><i class="devicon-java-plain-wordmark"></i></li>
               </ul>
             </div>
             <div class="col-md-4 col-sm-6 skill-list"> 
               <h3>Frameworks</h3>
               <ul>
-                <li>Django</li>
-                <li>React JS</li>
+                <li><i class="devicon-django-line-wordmark"></i></li>
+                <li><i class="devicon-react-original-wordmark"></i></li>
                 <li>Liquid</li>
               </ul>
             </div>
             <div class="col-md-4 col-sm-6 skill-list"> 
               <h3>Technologies</h3>
               <ul>
-                <li>Android</li>
+                <li><i class="devicon-android-plain"></i></li>
                 <li>iOS</li>
                 <li>.Net</li>
               </ul>
