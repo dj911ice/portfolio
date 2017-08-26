@@ -12,102 +12,106 @@
 // charset="utf-8"
 
 // google maps js api v3
-// var map;
-// function initMap(){
-//   map = new google.maps.Map(document.getElementById('map'), {
-//     center: {lat: 42.3160276, lng: -83.1294822},
-//     zoom: 12
-//   });
-//   var marker = new google.maps.Marker({
-//     position: map.getCenter(),
-//     map: map,
-//     title: '2631 Central Ave.\nDetroit, Michigan 48209\nUnited States of America'
-//   });
-// }
+var map;
+function initMap(){
+  map = new google.maps.Map(document.getElementById('map'), {
+    center: {lat: 42.3160276, lng: -83.1294822},
+    zoom: 12
+  });
+  var marker = new google.maps.Marker({
+    position: map.getCenter(),
+    map: map,
+    title: '2631 Central Ave.\nDetroit, Michigan 48209\nUnited States of America'
+  });
+}
 
 // document ready
 $(document).ready(function(){
-	// alert("Document is ready!");
-
-	//smooth scrolling
-	var $root = $('html, body');
-    $('.navbar-nav a').click(function(){
-      var href = $.attr(this, 'href');
-      $root.animate({
-        scrollTop: $(href).offset().top
-      }, 500, function () {
-        window.location.hash = href;
-      });
+  // alert("Document is ready!");
+  //smooth scrolling
+  var $root = $('html, body');
+  $('.navbar-nav a').click(function(){
+    var href = $.attr(this, 'href');
+    $root.animate({
+      scrollTop: $(href).offset().top
+    }, 500, function () {
+      window.location.hash = href;
+    });
     return false;
-    	});
-  //stellar
-	$.stellar();
+  });
 
-	//tooltips
-	$(function () {
-    	$('#linkedin').tooltip();
-   		});
-	$(function () {
-    	$('[data-toggle="tooltip"]').tooltip();
-  		});
- 
+  //stellar
+  $.stellar();
+
+  //tooltips
+  $(function () {
+    $('#linkedin').tooltip();
+  });
+
+  $(function () {
+    $('[data-toggle="tooltip"]').tooltip();
+  });
 
   $('#button').on('click', function(){
-  	// console.log('clicked'); //capturing the on "click"
-  	var comment = $('.message-box').val();
+    // console.log('clicked'); //capturing the on "click"
+    var comment = $('.message-box').val();
 
-  //text background conditional
-  if($('.message-box').val() === "") {
-  		$('.message-box').css('border', '2px solid red');
-	  } else {
-	  	$('#visible-comment').html(comment.toUpperCase());
-	  	$('.message-box').hide(1125, function(){
-  		alert("Thank you for the message!\nWill be in contact shortly!\nHave a great day!")
-  	});
-  };
-  		return false;
- });
+    //text background conditional
+    if($('.message-box').val() === "") {
+      $('.message-box').css('border', '2px solid red');
+    } else {
+      $('#visible-comment').html(comment.toUpperCase());
+      $('.message-box').hide(1125, function(){
+        alert("Thank you for the message!\nWill be in contact shortly!\nHave a great day!")
+      });
+    };
+    return false;
+  });
 
   //keyup
   $('.message-box').on('keyup', function(){
-  		var charCount = $('.message-box').val().length;
-  		$('#char-count').html(charCount);
-  		if(charCount > 50) {
-  			$('#char-count').css("color", "red");
-  		} else {
-  			$('#char-count').css("color", "black");
-  		};
-  	});
+    var charCount = $('.message-box').val().length;
+    $('#char-count').html(charCount);
+
+    if(charCount > 50) {
+      $('#char-count').css("color", "red");
+    } else {
+      $('#char-count').css("color", "black");
+    };
+  });
+
   //work section
   for(var i = 0; i < works.length; ++i) {
     $('#work1').append("\
-      <div class='col-md-6 col-sm-8 col-xs-12'>\
-        <a href= " + works[i].url + " class='work-img'>\
-          <img class='img-responsive' src='" + works[i].pic + "'>\
-          <span class='info'><p class='proj-title'>" + " </p></span>\
-        </a>\
-      </div>\
-      ");
+    <div class='col-md-6 col-sm-8 col-xs-12'>\
+      <a href= " + works[i].url + " class='work-img'>\
+        <img class='img-responsive' src='" + works[i].pic + "'>\
+        <span class='info'><p class='proj-title'>" + " </p></span>\
+      </a>\
+    </div>\
+    ");
+
     $('.work-img').attr("target", "_blank");
-     $('.work-img').mouseenter(function(){
+
+    $('.work-img').mouseenter(function(){
       $('.info', this).show();
     }).mouseleave(function(){
       $('.info', this).hide();
     });
+
     var images = $('#work1 img');
-      if(i%2 === 0) {
-        $(images[i]).css('border', '2px solid green');
-      } else {
-        $(images[i]).css('border', '2px solid purple');
-      };
+    if(i%2 === 0) {
+      $(images[i]).css('border', '2px solid green');
+    } else {
+      $(images[i]).css('border', '2px solid purple');
     };
+  };
 
   //ajax form
-    $.ajax({
-      url: "https://formspree.io/justin.p.dickerson@gmail.com", 
-      method: "POST",
-      data: {message: "New message!"},
-      dataType: "json"
-    });
-    
+  $.ajax({
+    url: "https://formspree.io/justin.p.dickerson@gmail.com", 
+    method: "POST",
+    data: {message: "New message!"},
+    dataType: "json"
   });
+});
