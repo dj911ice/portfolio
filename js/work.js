@@ -8,5 +8,5 @@ var works = [
 		url: "https://github.com/dj911ice",
 		// title: "Profile",
 		pic: "img/github-logo-sm.jpg"
-	},
+	}
 ];

@@ -1,3 +1,5 @@
+/* global google, works */
+
 //facebook
 (function(d, s, id) {
   var js, fjs = d.getElementsByTagName(s)[0];
@@ -62,7 +64,7 @@ $(document).ready(function(){
     } else {
       $('#visible-comment').html(comment.toUpperCase());
       $('.message-box').hide(1125, function(){
-        alert("Thank you for the message!\nWill be in contact shortly!\nHave a great day!")
+        alert("Thank you for the message!\nWill be in contact shortly!\nHave a great day!");
       });
     };
     return false;
@@ -106,12 +108,13 @@ $(document).ready(function(){
       $(images[i]).css('border', '2px solid purple');
     };
   };
-
+  
   //ajax form
-  $.ajax({
+  $('form').ajax({
     url: "https://formspree.io/justin.p.dickerson@gmail.com", 
     method: "POST",
-    data: {message: "New message!"},
+    data: {message: "hello!"},
     dataType: "json"
   });
+  
 });
