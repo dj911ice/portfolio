@@ -12,18 +12,18 @@
 // charset="utf-8"
 
 // google maps js api v3
-var map;
-function initMap(){
-  map = new google.maps.Map(document.getElementById('map'), {
-    center: {lat: 42.3160276, lng: -83.1294822},
-    zoom: 12
-  });
-  var marker = new google.maps.Marker({
-    position: map.getCenter(),
-    map: map,
-    title: '2631 Central Ave.\nDetroit, Michigan 48209\nUnited States of America'
-  });
-}
+// var map;
+// function initMap(){
+//   map = new google.maps.Map(document.getElementById('map'), {
+//     center: {lat: 42.3160276, lng: -83.1294822},
+//     zoom: 12
+//   });
+//   var marker = new google.maps.Marker({
+//     position: map.getCenter(),
+//     map: map,
+//     title: '2631 Central Ave.\nDetroit, Michigan 48209\nUnited States of America'
+//   });
+// }
 
 // document ready
 $(document).ready(function(){
@@ -101,12 +101,13 @@ $(document).ready(function(){
         $(images[i]).css('border', '2px solid purple');
       };
     };
+
   //ajax form
-    // $.ajax("form"{
-    //   url: "https://formspree.io/justin.p.dickerson@gmail.com", 
-    //   method: "POST",
-    //   data: {message: "New message!"},
-    //   dataType: "json"
-    // });
+    $.ajax({
+      url: "https://formspree.io/justin.p.dickerson@gmail.com", 
+      method: "POST",
+      data: {message: "New message!"},
+      dataType: "json"
+    });
     
   });
