@@ -1,5 +1,7 @@
 /* global google, works */
 
+
+
 //facebook
 (function(d, s, id) {
   var js, fjs = d.getElementsByTagName(s)[0];
@@ -108,13 +110,12 @@ $(document).ready(function(){
       $(images[i]).css('border', '2px solid purple');
     };
   };
-  
   //ajax form
-  $('form').ajax({
-    url: "https://formspree.io/justin.p.dickerson@gmail.com", 
-    method: "POST",
-    data: {message: "hello!"},
-    dataType: "json"
-  });
+//   $.ajax({
+//     url: "https://formspree.io/justin.p.dickerson@gmail.com", 
+//     method: "POST",
+//     data: {message: "Hello!"},
+//     dataType: "json"
+//   });
   
 });
