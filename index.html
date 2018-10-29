@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 
-    <title>JPDickerson Developer</title>
+    <title>JP Dickerson | Software & Web Developer</title>
 
     <!-- Bootstrap core CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
@@ -59,7 +59,7 @@
       </div> <!--end nav container-fluid -->
     </nav> <!-- end navbar -->
     <div class="jumbotron">
-  <div class="container-fluid" id="image-carousel">
+  <div class="container" id="image-carousel">
     <!-- Begin Carousel -->
     <!-- Carousel Images Section -->
     <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
@@ -110,13 +110,13 @@
         <div class="col-md-6 col-sm-8 about">
           <h3 id="intro">Introduction</h3>
             <p>
-              Greetings and welcome to my personal portfolio website, I am Justin! As a professional software developer, my goal is to produce websites and web applications that are of high value for clients anywhere in the world!
+              Greetings and welcome to my personal portfolio website, I am Justin! As a professional software developer, my goal is to produce software, websites, and web applications that are of high value for clients anywhere in the world!
             </p>
         </div>
         <div class="col-md-6 col-sm-8 about">
-          <h3 id="my-story">My Story</h3>
+          <h3 id="my-story">My Journey</h3>
           <p>
-            Today, I am a software developer adding a stack yet was not always the case. Prior, I was in IT as part of a five person team handling user support requests and data entry at a private non-profit in Cleveland, Ohio. Became intially curious about web development as I stumbled upon my passion which is for creating and building things from scratch. Therefore, enrolled and graduated from a remote bootcamp at CareerFoundry in Berlin, Germany where I learned not only Front-End but Ruby on Rails development. After moving to Detroit, Michigan enrolled and graduated from Grand Circus in C# .NET programming.
+            When I was a little boy, was always tinkering with technology. First it was mastering video games and later computers. However, it was not until much later in life I began to program during one of my jobs as an IT personalle at a non-profit. Being funded by the company I began my official journey and complete my first programming test by passing my first real programming class in Java. After the contract ended, decided to purse programming and development on my own. After a few months with online resources stumbled upon CareerFoundry a remote fullstack curriculum in Ruby on Rails web development, located in Berlin, Germany. Upon graduation and moving to Detroit, continued my education by applying, getting accepted, enrolled, and graduated from Grand Circus in .Net programming in C# located in Detroit, Michigan. On demo day, recieved a medal for best group .Net project voted on by employers. Today, I am full-stack developer and a contracted code coach at Grand Circus in C# & .Net.
           </p>
         </div><!-- end main-text -->
       </div>
@@ -131,10 +131,8 @@
     <div class="container work work2" id="work2">
       <!-- Example row of columns -->
       <div class="row anchor">
-        <h1 id="exp">Experience</h1>
-
+        <h1 id="exp">Experience</h1><br>
         <div class="col-md-4">
-
         <button type="button" class="btn btn-default btn-block" data-toggle="modal" data-target="#professional">View Professional</button>
         <!-- Modal -->
         <div id="professional" class="modal fade bs-example-modal-lg" tabindex="-1" aria-hidden="true" data-keyboard="true" role="dialog">
@@ -150,9 +148,14 @@
                 <div class="modal-body">
                   <p>Current Pursuits: </p>
                   <ul>
-                    <li>Grand Circus: Code coach in C# .NET</li>
-                    <li>Looking for opportunities</li>
+                    <li>Grand Circus
+                      <ul>
+                        <li>Code Coach: C# & .Net</li>
+                        <li>Intro to Coding TA (volueenter): JavaScript</li>
+                      </ul>
+                    </li>
                   </ul>
+                  <p>Work Status: Seeking Opportunities</p>
                 </div>
                 <div class="modal-footer">
                   <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -205,8 +208,8 @@
                 <div class="modal-body">
                   <h4>Degrees and Certificates</h4>
                   <ul>
-                    <li>Grand Circus: Earned certificate in C# .NET programming.</li>
-                    <li>CareerFoundry: Earned certificate in web development (Ruby on Rails).</li>
+                    <li>Grand Circus: Earned certificate in .NET programming: C#</li>
+                    <li>CareerFoundry: Earned certificate in web development: Ruby on Rails</li>
                     <li>Eastern Michigan University: Earned Master of Arts degree: Health Economics</li>
                     <li>University of Toledo: Earned Batchelor of Science in Pharaceutical Sciences: Pharmacy Administration
                       <h5>Minors</h5>
@@ -224,6 +227,7 @@
                       <li>IT 1025: IT Concepts for Programmers</li>
                       <li>IT 1050: Programmers Logic</li>
                       <li>IT 1150: Intro to Web Programming</li>
+                      <li>IT 2320: Interactive Internet Programming</li>
                       <li>IT 2650: Java Programming</li>  
                     </ul>
                     <h5>Washtenaw Community College</h5>
@@ -244,13 +248,14 @@
       </div><!-- /row -->
     </div> <!-- /container -->
     <!-- Contact Section -->
-    <div class="container-fluid" id="contact">
+    <div class="container" id="contact">
       <div class="contact contact-parallax" id="process">
         <h1>Contact and Connect</h1>
         <!-- <div id="map"></div> --> 
-        <div id="form-contact">
-          <form class="col-lg-8 col-md-8" method="POST" action="https://formspree.io/justin.p.dickerson@gmail.com">
-          <div class="form-group">
+        <div class="col-md-offset-1 col-sm-2"></div>
+        <div class="col-md-6 col-sm-4">
+          <form method="POST" action="https://formspree.io/justin.p.dickerson@gmail.com">
+          <div class="form-group" id="form-contact">
             <h2 id="hello">Say Hello!</h2>
           <label class="sr-only" for="name">Your Name</label>
           <input class="form-control" id="name" type="text" name="name" maxlength="25" placeholder="Enter your Name">
@@ -264,7 +269,7 @@
           <textarea class="form-control message-box" id="message-box" name="message" style="resize: none" placeholder="Enter your message" cols="40" rows="5" required="required" title="Input message here"></textarea>
           <p id="char-count"></p>
           <p id="visible-comment"></p>
-          <button type="submit" class="btn btn-default" id="button" value="Send">Submit</button>
+          <button type="submit" class="btn btn-default center-block" id="submit" value="Send">Submit</button>
           </form>
        </div>
       </div><!--end class contact -->
@@ -307,14 +312,7 @@
         <div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
           <div class="panel-body">
             <div class="col-md-3 col-sm-6 skill-list">
-              <h4>Work Level</h4>
-              <ul>
-                <li>Early Career</li>
-                <li>Entry/Junior</li>
-              </ul>
-            </div>
-            <div class="col-md-3 col-sm-6 skill-list">
-              <h4>Work Type</h4>
+              <h4>Work Type Information</h4>
               <ul>
                 <li>Apprenticeship: Yes</li>
                 <li>Traineeship: Yes</li>
@@ -326,34 +324,69 @@
               </ul>  
             </div>
             <div class="col-md-3 col-sm-6 skill-list">
-              <h4>Locations</h4>
+              <h4>Preferred U.S. Locations</h4>
               <ul>
-                <h5>United States</h5>
-                <ul>
-                  <li>Ann Arbor, MI</li>
-                  <li>Detroit, MI</li>
-                  <li>New York, NY</li>
-                  <li>Washinton, D.C.</li> 
-                  <li>Others considered based on opportunity</li> 
-                </ul>
-                <h5>Abroad</h5>
-                <ul>
-                  <li>Belgium</li>
-                  <li>Canada</li>
-                  <li>Germany</li>
-                  <li>Portugal</li>
-                  <li>Netherlands</li>
-                  <li>United Kingdom</li>
-                  <li>Others considered based on opportunity</li>  
-                </ul>
-                <li>Open to relocation? Yes</li>
+                <li>Ann Arbor, MI</li>
+                <li>Boston, MA</li>
+                <li>Chicago, IL</li>
+                <li>Detroit, MI</li>
+                <li>Miami, FL</li>
+                <li>New York, NY</li>
+                <li>Washinton, D.C.</li> 
+                <li>Other Locations?: Yes</li>
+                <li>Relocation? Yes</li> 
               </ul>
             </div>
             <div class="col-md-3 col-sm-6 skill-list">
-              <h4>Visa Info</h4>
+              <h4>Preferred Locations Abroad</h4>
+                <ul>
+                  <li>
+                    <h4>Canada</h4>
+                    <ul>
+                      <li>Toronto, ON</li>
+                      <li>Montreal, PQ</li>
+                      <li>Vancouver, BC</li>
+                    </ul>
+                  </li>
+                  <li>
+                    <h4>Germany</h4>
+                    <ul>
+                      <li>Berlin</li>
+                    </ul>
+                  </li>
+                  <li>
+                    <h4>Netherlands</h4>
+                    <ul>
+                      <li>Amsterdam</li>
+                      <li>Rotterdam</li>
+                      <li>Den Haag</li>
+                    </ul>
+                  </li>
+                  <li>
+                    <h4>United Kingdom</h4>
+                    <ul>
+                      <li>London</li>
+                    </ul>  
+                  </li>
+                  <li>Other Locations?: Yes</li>
+                  <li>Relocation? Yes</li>  
+                </ul>
+            </div>
+            <div class="col-md-3 col-sm-6 skill-list">
+              <h4>Work Visa Required?</h4>
               <ul>
-                <li>United States: No</li>
-                <li>Canada: No (canidate is a USC)</li>
+                <li>United States: No
+                  <ul>
+                    <li>U.S. citizen</li>
+                  </ul>
+                </li>
+                <li>Canada: Yes
+                  <ul>
+                    <li>Permit Acquisition Easy?: Yes via NAFTA/USMCA</li>
+                    <li>Sponsorship Required?: No</li>
+                    <li>Labour Market Impact Assessment Required?: No</li>
+                  </ul>
+                </li>
                 <li>Elsewhere: Probably</li>
               </ul>  
             </div>
@@ -397,22 +430,18 @@
               </ul>
             </div>    
             <div class="col-md-3 col-sm-6 skill-list">
-              <h4>Versioning</h4>
+              <h4>Versioning & Deployment</h4>
               <ul>
                 <li>Git</li>
                 <li>GitHub</li>
                 <li>BitBucket</li>
-              </ul>
-              <h4>Deployment</h4>
-              <ul>
                 <li>AWS</li>
-                <li>Heroku</li>    
+                <li>Heroku</li>  
               </ul>
               <h4>Payments API</h4>
               <ul>
                 <li>Stripe</li>
-              </ul>
-           </div>      
+            </div>  
             <div class="col-md-3 col-sm-6 skill-list">
               <h4>Operating Systems</h4>
               <ul>
@@ -448,7 +477,7 @@
                 <li>Eclipse: Java</li>
                 <li>Starlite by Star Systems: Laptop</li>
               </ul>
-            </div>
+            </div>  
           </div> <!-- end panel-body class -->
         </div> <!-- end panel-collapse collapse class -->
       </div> <!-- end panel panel-default class -->
@@ -457,9 +486,9 @@
     <!-- footer -->
   <footer>
     <div class="text-center">
-      <p>Website Created Via:
-      <i class="devicon-html5-plain-wordmark"></i> <i class="devicon-css3-plain-wordmark"></i> <i class="devicon-javascript-plain"></i> <i class="devicon-bootstrap-plain-wordmark"></i> <i class="devicon-jquery-plain-wordmark"></i> <i class="devicon-amazonwebservices-plain-wordmark"></i>
-       <i class="devicon-devicon-plain-wordmark"></i>
+      <p>
+      <i class="devicon-html5-plain-wordmark tech-icon"></i> <i class="devicon-css3-plain-wordmark tech-icon"></i> <i class="devicon-javascript-plain tech-icon"></i> <i class="devicon-bootstrap-plain-wordmark tech-icon"></i> <i class="devicon-jquery-plain-wordmark tech-icon"></i> <i class="devicon-amazonwebservices-plain-wordmark tech-icon"></i>
+       <i class="devicon-devicon-plain-wordmark tech-icon"></i>
       </p>
     </div>
     <div class="copyright">
