@@ -88,8 +88,8 @@ $(document).ready(function(){
   for(var i = 0; i < works.length; ++i) {
     $('#work1').append("\
     <div class='col-md-3 col-sm-6 col-xs-12'>\
-    <span class='info'><p class='proj-title'>" + works[i].title + "\
-      "+works[i].code+"\
+    <span class='info'><h4 class='proj-title'>" + works[i].title + "\
+      "+works[i].code+"</h4>\
       </span>\
       <a href= " + works[i].url + " class='work-img'>\
         <img class='img-responsive' src='" + works[i].pic + "'>\
@@ -120,5 +120,12 @@ $(document).ready(function(){
 //     data: {message: "Hello!"},
 //     dataType: "json"
 //   });
-  
+
+//   Devicons
+  $('#dev-icons').append(created.devicons);
+  $('#front-end').append(frontEnd.devicons);
+  $('#back-end').append(backEnd.devicons);
+  $('#database').append(database.devicons);
+  $('#ver-dep').append(verdep.devicons);
 });
+  
