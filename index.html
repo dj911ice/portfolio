@@ -6,10 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 
-    <title>JPD | Software & Web</title>
+    <title>JPD | Software & Android</title>
 
     <!-- Bootstrap core CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
 
     <!-- Custom styles for this template go here -->
     <link rel="stylesheet" type="text/css" href="css/styles.css">
@@ -19,8 +19,10 @@
       <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
-    <!-- Devicon CSS CDN -->
-    <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
+    <!-- Devicon CSS CDN --><!-- 
+    <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css"> -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@master/devicon.min.css">
+
   </head>
 
   <body data-spy="scroll" data-target=".navbar">
@@ -35,8 +37,8 @@
             <span class="icon-bar"></span>
           </button>
           <div class="projectName navbar-brand">
-            <a target= "_blank" id="linkedin" href="https://www.linkedin.com/in/justinpdickerson" data-toggle="tooltip" data-placement="bottom" title="Contact via LinkedIn!">JPDickerson</a>
-            <a href="https://github.com/dj911ice" target="_blank"><i class="devicon-github-plain-wordmark tech-icon"></i></a>
+            <a id="linkedin" href="https://www.linkedin.com/in/justinpdickerson" target= "_blank" data-toggle="tooltip-in" data-placement="bottom" title="Contact Justin via LinkedIn!"><i class="devicon-linkedin-plain colored tech-icon"></i></a>
+            <a id="github-repos" href="https://github.com/dj911ice" target="_blank"data-toggle="tooltip-github" data-placement="bottom" title="View Justin's Repos!"><i class="devicon-github-plain-wordmark tech-icon"></i></a>
           </div> <!-- end projectName -->
         </div> <!-- end navbar header -->
           <div class="navbar-collapse collapse">
@@ -48,8 +50,8 @@
                 Work <span class="caret"></span>
                 </a>
                 <ul class="dropdown-menu">
-                  <li><a href="#work1">Portfolio</a></li>
                   <li><a href="#work2">Experience</a></li>
+                  <li><a href="#work1">Portfolio</a></li>
                 </ul> <!-- end dropdown menu -->
               </li> <!-- end dropdown -->
               <li><a href="#contact">Contact</a></li>
@@ -62,13 +64,14 @@
                   <h5 class="lt-header">Languages & Frameworks</h5>
                   <li><a href="https://www.microsoft.com/net/languages" target= "_blank">C#</a></li>
                   <li><a href="https://www.microsoft.com/net" target= "_blank">.Net</a></li>                  
-                  <li><a href="https://crystal-lang.org/" target= "_blank">Crystal</a></li>
-                  <li><a href="https://www.oracle.com/java/" target= "_blank">Java</a></li>                  
+                  <li><a href="https://www.oracle.com/java/" target= "_blank">Java</a></li>  
+                  <li><a href="https://kotlinlang.org/" target="_blank">Kotlin</a></li>                
                   <li><a href="https://www.ruby-lang.org/en/" target= "_blank">Ruby</a></li>
                   <li><a href="https://rubyonrails.org/" target= "_blank">Rails</a></li>
                   <h5 class="lt-header">The Tools</h5>
+                  <li><a href="https://developer.android.com/studio" target= "_blank">Android Studio</a></li>
                   <li><a href="https://www.gimp.org/" target= "_blank">Gimp</a></li>
-                  <li><a href="https://www.eclipse.org/ide/" target= "_blank">Eclipse</a></li>
+                  <li><a href="https://www.jetbrains.com/idea/" target= "_blank">IntelliJ</a></li>
                   <li><a href="https://www.nano-editor.org/" target= "_blank">Nano</a></li>
                   <li><a href="https://notepad-plus-plus.org/" target= "_blank">Notepad ++</a></li>
                   <li><a href="https://www.jetbrains.com/ruby/" target= "_blank">Ruby Mine</a></li>
@@ -77,7 +80,8 @@
                   <h5 class="lt-header">Operating Systems & Laptop Manufacturer</h5>
                   <li><a href="https://www.ubuntu.com/" target= "_blank">Ubuntu</a></li>
                   <li><a href="https://www.microsoft.com/en-us/windows" target= "_blank">Windows</a></li>
-                  <li><a href="https://starlabs.systems/" target= "_blank">StarLabs Systems</a></li>                  
+                  <li><a href="https://zorinos.com/" target="_blank">Zorin</a></li>
+                  <li><a href="https://starlabs.systems/" target= "_blank">StarLabs Systems</a></li>
                 </ul> <!-- end dropdown menu -->
               </li> <!-- end dropdown -->
             </ul>
@@ -131,20 +135,22 @@
     </div><!-- End Carousel -->        
   </div><!-- End Jumbo Container -->
 </div><!--End Jumbotron -->
-
+<div class="linux-icon" id="linux"></div>
+&nbsp
 <!-- About Section -->
+  <br><br>
   <div class="container">
     <div class="row anchor" id="about">
       <h1>About</h1>
       <div class="col-md-6 about">
         <h3 id="intro">Introduction</h3>
           <p>
-            Greetings and welcome to my personal portfolio website, I am Justin! As a professional software developer, my goal is to produce software, websites, and web applications that are of high value for clients anywhere in the world!
+            Greetings and welcome to my personal portfolio website! My name is Justin a professonal software developer, specializing in Android.
           </p>
         <h3 id="my-story">My Journey</h3>
           <p>
-            When I was a little boy, was always tinkering with technology. First it was mastering video games and later computers. However, was not until later in life I began to program as a student during one of my jobs as an IT personalle at a non-profit in January 2015. Being funded by the company I began my official journey and completed my first programming test by passing my first real programming class in Java. After the contract ended, decided to purse programming and development on my own. After a few months with online resources stumbled upon CareerFoundry a remote fullstack curriculum in Ruby on Rails web development, located in Berlin, Germany. Upon graduation and moving to Detroit, continued my education by applying, getting accepted, enrolled, and graduated from Grand Circus in .Net programming in C# located in Detroit, Michigan. On demo day, recieved a medal for best group .Net project voted on by employers. Today, I am full-stack developer and a contracted code coach at Grand Circus in C#.Net. Additionally, working on various side projects in Crystal, Front-End, Java, and Ruby on Rails development.
-          </p>
+            When I was a little boy, was always tinkering with technology. First it was mastering video games and later computers. However, was not until later in life that I started to program as a student during one of my jobs. I began my official journey at a non-profit company in Cleveland, Ohio by completing first programming class in Java. After the contract ended, decided to purse programming and development on my own. Within a few months with online resources stumbled upon CareerFoundry a remote fullstack curriculum in Ruby on Rails web development, located in Berlin, Germany. Upon completion, continued my training at Grand Circus in .Net programming with the language being C# located in Detroit, Michigan. Afterwards, obtained a developer position at a consulting company in Atlanta, Georgia where I was trained on the Andoid platform and later travelled to North Carolina for a project. Today I am looking to dive deeper into Android development and prmarily open to working within the mobile space.
+          </p> 
       </div>
       <div class="col-md-6 about">
         <br><br><br><br>
@@ -170,14 +176,12 @@
                       <h4 class="modal-title">Professional</h4>
                     </div>
                     <div class="modal-body">
-                      <p>Current Pursuits: </p>
+                      <p>Current Pursuits:</p>
                       <ul>
-                        <li>Grand Circus
+                        <li>Mobile Development</li>
                           <ul>
-                            <li>Code Coach: C#.Net</li>
-                            <li>Intro to Coding TA (volunteer): JavaScript</li>
-                          </ul>
-                        </li>
+                            <li>Android</li>
+                          </ul>      
                       </ul>
                       <p>Work Status: Seeking Opportunities</p>
                       <p>Awards & Scholarships</p>
@@ -202,9 +206,12 @@
                 <div class="modal-content">
                  <div class="modal-header">
                    <button type="button" class="close" data-dismiss="modal">&times;</button>
-                   <h4 class="modal-title">Prior Employment</h4>
+                   <h4 class="modal-title">Employment</h4>
                  </div>
                  <div class="modal-body">
+                   <p>Unwrapped, Inc: Currently on contract as a consultant/developer in developing new apps using Kotlin. Nature of work includes creating user stories and posting them to jira, implementing & customizing Exo-Player, and performing competitive app research & analysis.
+                   <p>Mobile Apps Company: Employed as an Android developer to consult with Fortune 500 companies in the development of their Android applications. Duties include bug-fixes and enhancements of existing applications along with introducing new features both in Java and Kotlin.
+                   </p>
                    <p>Council for Economic Opportunities in Greater Cleveland: Employed first as a family services worker to input medical and dental records into the COPA database system. Upon transfer, became a web administrator trainee where in addition to ordinary IT duties, became a leader in the creation of the new company website utilizing wordpress and offered solutions to integrate the COPA and OCEAN database systems within the new website.</p>
                    <p>Home Appliance Mart, Inc.: Employed as a web marketing associate and was responsible for creating and managing content via dreamweaver and CMS for their two web properties.</p>
                    <p>Solutions for VIP Dancers LC: Founded and ran a company with an online presence of 5+ years that sold dance shoes, the web shop was managage via a propriatary content management system.</p> <br><br>
@@ -229,7 +236,7 @@
                   <div class="modal-content">
                     <div class="modal-header">
                       <button type="button" class="close" data-dismiss="modal">&times;</button>
-                      <h4 class="modal-title">Past Education</h4>
+                      <h4 class="modal-title">Education & Training</h4>
                     </div>
                     <div class="modal-body">
                       <h4>Degrees and Certificates</h4>
@@ -272,18 +279,31 @@
             </div>                                                         
             </div><!-- /col -->
           </div><!-- /row -->
+          <!-- Large Model Button -->
+          <div class="row">
+            <h2 class="learn-more">Learn More</h2>
+            <div class="modal-button">
+              <button class="btn btn-primary" data-toggle="modal" data-target="#mycv">View Resume (pdf)
+              </button>
+              <button class="btn btn-primary" data-toggle="modal" data-target="#downloadcv">Download Resume (docx)
+              </button>
+            </div>
+          </div> 
         </div> <!-- /container -->    
       </div>
     </div>
   </div> <!--/container -->
   <!-- Work 1 Section -->
+  <br><br>&nbsp
     <div class="container work work1" id="work1">
       <div class="row anchor">
         <h1>Portfolio</h1>
       </div> <!-- end row -->
     </div> <!-- end work 1 container -->
     <!-- Contact Section -->
+
     <div class="container" id="contact">
+      <br>&nbsp
       <div class="contact contact-parallax" id="process">
         <h1>Contact and Connect</h1>
         <!-- <div id="map"></div> --> 
@@ -309,29 +329,36 @@
        </div>
       </div><!--end class contact -->
     </div>
-    <!-- Large Model Button -->
-    <div class="row">
-      <h2 class="learn-more">Learn More</h2>
-      <div class="modal-button">
-        <button class="btn btn-primary" data-toggle="modal" data-target="#mycv">View Resume</button>
-      </div>
-    </div>
     <!-- Large Modal -->
     <div id="mycv" class="modal fade bs-example-modal-lg" tabindex="-1" aria-hidden="true" data-backdrop="static" data-keyboard="true">
       <div class="modal-dialog modal-lg">
         <div class="modal-content">
           <div class="modal-header">
             <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-            <h4 class="modal-title" id="myModalLabel">Software & Web Developer</h4>
+            <h4 class="modal-title" id="myModalLabel">Software & Android Developer</h4>
           </div>
             <div class="modal-body">
-               <embed id="modalembed" src="pdf/Justin_Dickerson_Resume_112018.pdf">
+               <embed id="modalembed" src="cv/Justin_Dickerson_Resume_082920.pdf">
             </div>
           </div>
         </div>
       </div>
+    <div id="downloadcv" class="modal fade bs-example-modal-lg" tabindex="-1" aria-hidden="true" data-backdrop="static" data-keyboard="true">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title" id="myModalLabel">Software & Android Developer</h4>
+          </div>
+            <div class="modal-body">
+               <embed id="modalembed" src="cv/Justin_Dickerson_Resume_082920.docx">
+            </div>
+          </div>
+        </div>
+      </div>
+      <br>
     <!-- Faq Section -->
-    <div class="container-fluid" id="faq" data-stellar-background-ratio="0.5">
+    <div class="container" id="faq" data-stellar-background-ratio="0.5">
       <div class="faq anchor">
         <h1>FAQ</h1>
       </div>
@@ -346,7 +373,7 @@
           </div> <!-- end panel-heading class -->
         <div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
           <div class="panel-body">
-            <div class="col-md-3 col-sm-6 skill-list">
+            <div class="col-md-4 col-sm-6 skill-list">
               <h4>Work Type Information</h4>
               <ul>
                 <li>Apprenticeship: Yes</li>
@@ -355,24 +382,27 @@
                 <li>Contract: Yes</li>
                 <li>Part-Time: Yes</li>
                 <li>Full-Time: Yes</li>
-                <li>Remote: Yes</li>
+                <li>Remote: Yes & Preferred</li>
               </ul>  
             </div>
-            <div class="col-md-3 col-sm-6 skill-list">
-              <h4>Preferred U.S. Locations</h4>
+            <div class="col-md-4 col-sm-6 skill-list">
+              <h4>Preferred U.S. Metros</h4>
               <ul>
-                <li>Ann Arbor, MI</li>
                 <li>Boston, MA</li>
+                <li>Charlotte, NC</li>
                 <li>Chicago, IL</li>
                 <li>Detroit, MI</li>
+                <li>Jacksonville, FL</li>
+                <li>Los Angles, CA</li>
                 <li>Miami, FL</li>
                 <li>New York, NY</li>
+                <li>San Francisco,</li>
                 <li>Washinton, D.C.</li> 
                 <li>Other Locations?: Yes</li>
-                <li>Relocation?: Yes</li> 
+                <li>Relocation?: Yes, After Covid-19</li> 
               </ul>
             </div>
-            <div class="col-md-3 col-sm-6 skill-list">
+            <div class="col-md-4 col-sm-6 skill-list">
               <h4>Preferred Locations Abroad</h4>
                 <ul>
                   <li>Canada</li>
@@ -384,24 +414,6 @@
                   <li>Other Locations?: Yes</li>
                   <li>Relocation?: Yes</li>  
                 </ul>
-            </div>
-            <div class="col-md-3 col-sm-6 skill-list">
-              <h4>Work Visa Required?</h4>
-              <ul>
-                <li>United States: No
-                  <ul>
-                    <li>U.S. Citizen</li>
-                  </ul>
-                </li>
-                <li>Canada: Yes
-                  <ul>
-                    <li>Permit Acquisition Easy?: Yes, NAFTA/USMCA</li>
-                    <li>Sponsorship Required?: No</li>
-                    <li>Labour Market Impact Assessment Required?: No</li>
-                  </ul>
-                </li>
-                <li>Elsewhere: Probably</li>
-              </ul>  
             </div>
           </div> <!-- end panel-body class -->
         </div> <!-- end panel-collapse collapse class -->
@@ -433,25 +445,31 @@
             <div class="col-md-3 col-sm-6 skill-list">
               <h4>IDEs & Text Editors</h4>
               <ul>
+                <li>Android Studio</li>
                 <li>Eclipse</li>
+                <li>InteliJ</li>
                 <li>Nano</li>
                 <li>Notepad++</li>
                 <li>Ruby Mine</li>
                 <li>Sublime Text</li>
-                <li>Visual Studio Community & Code</li>
+                <li>Visual Studio</li>
               </ul>
             </div>
             <div class="col-md-3 col-sm-6 skill-list">
               <h4>Operating Systems</h4>
               <ul>
+                <li>Mac OS</li>
                 <li>Ubuntu 18.04 & 18.10 </li>
                 <li>Windows 10 Professional</li>
+                <li>Zorin OS</li>
+
               </ul>
             </div>
             <div class="col-md-3 col-sm-6 skill-list">
               <h4>Development Machine</h4>
               <ul>
                 <li>Starlite (MK1) by Starlabs Systems</li>
+                <li>Star Laptop (MK3) by Starlabs Systems</li>
               </ul>
             </div>
           </div> <!-- end panel-body class -->
@@ -464,11 +482,11 @@
     <div class="text-center" id="dev-icons">
     </div>
     <div class="copyright">
-     &copy; Justin P. Dickerson 2017 - 2018 all rights reserved
+     &copy; Justin P. Dickerson 2017 - 2020 all rights reserved
     </div>
     <div class="post" id="post">
      <span class="glyphicon glyphicon-home"></span>
-      2631 Central | Detroit, Michigan 48209 | United States |
+      United States |
       <span class="glyphicon glyphicon-phone"></span> +1.734.985.0669 |
       <span class="glyphicon glyphicon-envelope"></span> justin.p.dickerson@gmail.com
     </div>
@@ -488,10 +506,10 @@
     <!-- ============================= -->
 
     <!-- Javascript Frameworks -->
-    <!-- JQuery 2.2.4 -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <!-- JQuery 3.5.1 -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script> 
     <!-- Bootstrap core JS -->
-    <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <!-- Can place script tags with JavaScript files here -->
     <script type="text/javascript" src="js/jquery.stellar.min.js"></script>
     <script type="text/javascript" src="js/work.js"></script>

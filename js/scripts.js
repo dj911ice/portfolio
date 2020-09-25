@@ -25,7 +25,7 @@ function initMap(){
   var marker = new google.maps.Marker({
     position: map.getCenter(),
     map: map,
-    title: '2631 Central Ave.\nDetroit, Michigan 48209\nUnited States of America'
+    title: 'Ponte Vedra Beach, Florida 32081\nUnited States of America'
   });
 }
 
@@ -53,8 +53,18 @@ $(document).ready(function(){
   });
 
   $(function () {
-    $('[data-toggle="tooltip"]').tooltip();
+    $('[data-toggle="tooltip-in"]').tooltip();
   });
+
+  $(function () {
+    $('#github-repos').tooltip();
+  });
+
+  $(function () {
+    $('[data-toggle="tooltip-github"]').tooltip();
+  });
+
+
 
   $('#button').on('click', function(){
     // console.log('clicked'); //capturing the on "click"
@@ -122,6 +132,7 @@ $(document).ready(function(){
 //   });
 
 //   Devicons
+  $('#linux').append(linux.devicons);
   $('#dev-icons').append(created.devicons);
   $('#front-end').append(frontEnd.devicons);
   $('#back-end').append(backEnd.devicons);

@@ -265,6 +265,11 @@ footer {
 	font-size: 1.45em;
 }
 
+.linux-icon {
+	font-size: 4.5em;
+	text-align: center;
+}
+
 .icon-right {
 	float: right;
 }
