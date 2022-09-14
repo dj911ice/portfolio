@@ -3,7 +3,7 @@ var works = [
 	{
 		url: "https://youtu.be/PQXwOXdSj9U",
 		title: "Dance Products",
-		code: "<a href='https://github.com/dj911ice/nameofapp' target='_blank'><i class='devicon-github-plain-wordmark tech-icon icon-right'></i></a>",
+		code: "<a href='https://github.com/dj911ice/nameofapp' target='_blank'><i class='devicon-github-original-wordmark tech-icon icon-right'></i></a>",
 		tech: "<i class='devicon-ruby-plain-wordmark tech-icon'></i> <i class='devicon-rails-plain-wordmark tech-icon'></i>\
 		<i class='devicon-html5-plain-wordmark tech-icon'></i> <i class='devicon-css3-plain-wordmark tech-icon'></i> <i class='devicon-javascript-plain tech-icon'></i>\
 		<i class='devicon-jquery-plain-wordmark tech-icon'></i> <i class='devicon-bootstrap-plain-wordmark tech-icon'></i> <i class='devicon-postgresql-plain-wordmark tech-icon'></i> <i class='devicon-redis-plain-wordmark tech-icon'></i>",
@@ -12,7 +12,7 @@ var works = [
 	{
 		url: "https://youtu.be/Z3_WHjstaDU",
 		title: "Cabinet App",
-		code: "<a href='https://github.com/dj911ice/cabinet' target='_blank'><i class='devicon-github-plain-wordmark tech-icon icon-right'></i></a>",
+		code: "<a href='https://github.com/dj911ice/cabinet' target='_blank'><i class='devicon-github-original-wordmark tech-icon icon-right'></i></a>",
 		tech: "<i class='devicon-ruby-plain-wordmark tech-icon'></i> <i class='devicon-rails-plain-wordmark tech-icon'></i>\
 		<i class='devicon-html5-plain-wordmark tech-icon'></i> <i class='devicon-css3-plain-wordmark tech-icon'></i> <i class='devicon-javascript-plain tech-icon'></i>\
 		<i class='devicon-bootstrap-plain-wordmark tech-icon'></i>",
@@ -21,7 +21,7 @@ var works = [
 	{
 		url: "https://youtu.be/eyWo9FHxzB4",
 		title: "Habitica Abroad",
-		code: "<a href='https://github.com/dj911ice/HabiticalTravel' target='_blank'><i class='devicon-github-plain-wordmark tech-icon icon-right'></i></a>",
+		code: "<a href='https://github.com/dj911ice/HabiticalTravel' target='_blank'><i class='devicon-github-original-wordmark tech-icon icon-right'></i></a>",
 		tech: "<i class='devicon-csharp-plain-wordmark tech-icon'></i> <i class='devicon-dot-net-plain-wordmark tech-icon'></i>\
 		<i class='devicon-html5-plain-wordmark tech-icon'></i> <i class='devicon-css3-plain-wordmark tech-icon'></i> <i class='devicon-javascript-plain tech-icon'></i>\
 		<i class='devicon-jquery-plain-wordmark tech-icon'></i> <i class='devicon-bootstrap-plain-wordmark tech-icon'></i> <i class='devicon-visualstudio-plain-wordmark tech-icon'></i>",
@@ -30,16 +30,16 @@ var works = [
 	{
 		url: "https://youtu.be/FdY97Lx7Vo4",
 		title: "GC Library",
-		code: "<a href='https://github.com/dj911ice/grandcircus_midterm2018' target='_blank'><i class='devicon-github-plain-wordmark tech-icon icon-right'></i></i></a>",
+		code: "<a href='https://github.com/dj911ice/grandcircus_midterm2018' target='_blank'><i class='devicon-github-original-wordmark tech-icon icon-right'></i></i></a>",
 		tech: "<i class='devicon-csharp-plain-wordmark tech-icon'></i> <i class='devicon-dot-net-plain-wordmark tech-icon'></i>\
 		<i class='devicon-visualstudio-plain-wordmark tech-icon'></i>",
 		pic: "img/GCLibrary_sc.PNG"
 	},
 	{
-		url: "https://github.com/dj911ice/ExoPlayerKotlin/blob/master/app/src/main/java/com/jpdickerson/exoplayerkotlin/MainActivity.kt",
+		url: "https://github.com/dj911ice/ExoPlayerKotlin",
 		title: "Exo-Player Audio Sample<br>\
 		Works on/off Network",
-		code: "<a href='https://github.com/dj911ice/ExoPlayerKotlin' target='_blank'><i class='devicon-github-plain-wordmark tech-icon icon-right'></i></a>",
+		code: "<a href='https://github.com/dj911ice/ExoPlayerKotlin' target='_blank'><i class='devicon-github-original-wordmark tech-icon icon-right'></i></a>",
 		tech: "<i class='devicon-android-plain tech-icon'>",
 		pic: "img/exoplayer_audio.png"
 	}
@@ -49,7 +49,13 @@ var works = [
 var linux = {
 	devicons: "\
 	<p>\
-		<i class='devicon-android-plain-wordmark colored'></i>\
+		<i class='devicon-android-plain colored'></i>\
+		<i class='devicon-kotlin-plain colored'></i>\
+		<i class='devicon-java-plain colored'></i>\
+		<i class='devicon-ruby-plain colored'></i>\
+		<i class='devicon-rails-plain colored'></i>\
+		<i class='devicon-csharp-plain colored'></i>\
+		<i class='devicon-windows8-plain colored'></i>\
 		<i class='devicon-linux-plain'></i>\
 	</p>"
 };
